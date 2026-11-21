@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="University Student Activity Management Portal to browse upcoming campus events, explore student clubs, and register for activities.">
+  <meta name="theme-color" content="#1d4ed8">
+  <title>University Student Activity Management Portal</title>
+</head>
+<body>
+  <a href="#main-content">Skip to main content</a>
+
+  <header>
+    <div>
+      <h1>Campus Activity Portal</h1>
+      <p>Discover events, join clubs, and register for university activities</p>
+    </div>
+
+    <nav aria-label="Primary navigation">
+      <ul>
+        <li><a href="#upcoming-events">Upcoming Events</a></li>
+        <li><a href="#activities">Activities</a></li>
+        <li><a href="#registration">Register</a></li>
+        <li><a href="#announcements">Announcements</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="upcoming-events" aria-labelledby="events-heading">
+      <h2 id="events-heading">Upcoming Events</h2>
+
+      <article>
+        <h3>Annual Inter-College Hackathon</h3>
+        <p><strong>Date:</strong> <time datetime="2026-12-05">December 5, 2026</time></p>
+        <p><strong>Venue:</strong> Central Auditorium</p>
+        <p>Build full-stack and civic solutions in a 24-hour team sprint with faculty and industry mentors.</p>
+        <a href="#registration">Register for Hackathon</a>
+      </article>
+
+      <article>
+        <h3>Cultural &amp; Performing Arts Fest</h3>
+        <p><strong>Date:</strong> <time datetime="2026-12-12">December 12, 2026</time></p>
+        <p><strong>Venue:</strong> Open Air Amphitheatre</p>
+        <p>Showcase music, dance, drama, and street theatre performances across university departments.</p>
+        <a href="#registration">Register for Cultural Fest</a>
+      </article>
+    </section>
+
+    <section id="activities" aria-labelledby="activities-heading">
+      <h2 id="activities-heading">Explore University Activities</h2>
+      <ul>
+        <li><strong>Coding &amp; Open Source Club:</strong> Weekly peer-coding sessions, workshops, and Git clinics.</li>
+        <li><strong>NSS &amp; Community Outreach:</strong> Campus cleanliness drives, blood donation camps, and village literacy programmes.</li>
+        <li><strong>Sports &amp; Athletics Council:</strong> Intramural tournaments in cricket, badminton, basketball, and athletics.</li>
+      </ul>
+    </section>
+
+    <section id="registration" aria-labelledby="registration-heading">
+      <h2 id="registration-heading">Student Event Registration</h2>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Student Details</legend>
+
+          <div>
+            <label for="student-name">Full Name <span aria-hidden="true">*</span></label>
+            <input type="text" id="student-name" name="studentName" autocomplete="name" required>
+          </div>
+
+          <div>
+            <label for="student-id">University ID / Roll Number <span aria-hidden="true">*</span></label>
+            <input type="text" id="student-id" name="studentId" required>
+          </div>
+
+          <div>
+            <label for="student-email">University Email <span aria-hidden="true">*</span></label>
+            <input type="email" id="student-email" name="studentEmail" autocomplete="email" required>
+          </div>
+        </fieldset>
+
+        <fieldset>
+          <legend>Event &amp; Participation Preferences</legend>
+
+          <div>
+            <label for="event-select">Select Event <span aria-hidden="true">*</span></label>
+            <select id="event-select" name="eventName" required>
+              <option value="">-- Choose an event --</option>
+              <option value="hackathon">Annual Inter-College Hackathon</option>
+              <option value="cultural-fest">Cultural &amp; Performing Arts Fest</option>
+              <option value="sports-meet">Inter-Department Sports Meet</option>
+            </select>
+          </div>
+
+          <fieldset>
+            <legend>Participation Mode</legend>
+            <div>
+              <input type="radio" id="mode-solo" name="participationMode" value="solo" checked>
+              <label for="mode-solo">Individual / Solo</label>
+            </div>
+            <div>
+              <input type="radio" id="mode-team" name="participationMode" value="team">
+              <label for="mode-team">Team</label>
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Additional Support Needed</legend>
+            <div>
+              <input type="checkbox" id="need-certificate" name="support" value="certificate">
+              <label for="need-certificate">Participation certificate required</label>
+            </div>
+            <div>
+              <input type="checkbox" id="need-accessibility" name="support" value="accessibility">
+              <label for="need-accessibility">Accessibility or seating accommodation</label>
+            </div>
+          </fieldset>
+
+          <div>
+            <label for="notes">Additional Notes or Team Details</label>
+            <textarea id="notes" name="notes" rows="4" placeholder="Share team member names, preferred track, or special requests"></textarea>
+          </div>
+        </fieldset>
+
+        <button type="submit">Submit Registration</button>
+        <button type="reset">Clear Form</button>
+      </form>
+    </section>
+
+    <aside id="announcements" aria-labelledby="announcements-heading">
+      <h2 id="announcements-heading">Quick Notices</h2>
+      <p>Carry your valid university ID card for entry and attendance verification at all venues.</p>
+      <p>Registrations for December events close two days prior to the scheduled date.</p>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 University Student Activity Cell. All rights reserved.</p>
+    <p>Contact: <a href="mailto:activities@university.edu.in">activities@university.edu.in</a></p>
+  </footer>
+</body>
+</html>
